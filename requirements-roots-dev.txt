@@ -1,0 +1,5 @@
+# using this to keep track the deployment requirements
+pytest
+# plus personal preferences that I will for now place here as well.
+ipdb
+ipython
