@@ -1,5 +1,6 @@
 from flask import Blueprint
-from voluptuous import Schema, Required, REMOVE_EXTRA
+from voluptuous import Schema, Required, Any, REMOVE_EXTRA
+from six import string_types
 
 from bolog.api_components import ApiResult, dataschema
 
@@ -14,10 +15,10 @@ def list_books():
 
 @books.route("/json/book", methods=["POST"])
 @dataschema(Schema({
-    Required('title'): str,
+    Required('title'): Any(*string_types),
     Required('authors'): list,  # TODO: of strings
-    # 'category': str,
-    # 'topic': str
+    # 'category': Any(*string_types),
+    # 'topic': Any(*string_types),
 }, extra=REMOVE_EXTRA))
 def add_book(title, authors, category=None, topic=None):
     # TODO actually add the book :)
