@@ -1,6 +1,4 @@
 language: python
-# Although it's not necessary,
-# I will try to support all the python versions out of curiosity, how difficult that is.
 python:
   - "2.6"
   - "2.7"

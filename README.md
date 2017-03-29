@@ -1,5 +1,7 @@
 # bolog API
 
+[![Build Status](https://travis-ci.org/zormit/bolog-API.svg?branch=master)](https://travis-ci.org/zormit/bolog-API)
+
 This is a book catalog written in Flask. It's only an API + backend.
 
 
@@ -14,7 +16,7 @@ This is a book catalog written in Flask. It's only an API + backend.
 ### run tests
 
 ```
-python -m pytest tests
+PYTHONPATH=. pytest
 ```
 
 Because of problems with [not having the module in the path](http://stackoverflow.com/a/34140498), we're calling `pytest` that way.
@@ -24,7 +26,7 @@ Because of problems with [not having the module in the path](http://stackoverflo
 
 ```
 export FLASK_APP=`pwd`/devapp.py
-export FALSK_DEBUG=1
+export FLASK_DEBUG=1
 flask run
 ```
 
