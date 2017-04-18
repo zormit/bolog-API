@@ -1,20 +1,29 @@
 <!DOCTYPE html>
 <html>
 <head>
-<!--script src="assets/javascript/list.min.js"></script-->
-<script src="data.js"></script>
+<script src="assets/javascript/list.min.js"></script>
+<script type="text/javascript" src="prototypes/books.js"></script>
+<link rel="stylesheet" href="assets/css/bootstrap-3.3.7-dist/css/bootstrap.min.css">
 </head>
 <body>
-<script src="http://listjs.com/assets/javascripts/list.min.js"></script>
 <div id="books">
 
   <input class="search" placeholder="Search" />
-  <button class="sort" data-sort="name">
+  <button class="sort" data-sort="title">
     Sort
   </button>
 
-  <ul class="list"></ul>
+  <table class="table table-striped">
+    <thead>
+        <th>Title</th>
+        <th>Authors</th>
+        <th>Shelf</th>
+    </thead>
+    <tbody class="list"></tbody>
+    </tbody>
+  <table>
 
 </div>
+<script src="data.js"></script>
 </body>
 </html>

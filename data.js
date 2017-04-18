@@ -1,27 +1,12 @@
 var options = {
-  valueNames: [ 'name', 'born' ],
+  valueNames: [ 'title', 'authors', 'shelf' ],
   // Since there are no elements in the list, this will be used as template.
-  item: '<li><h3 class="name"></h3><p class="born"></p></li>'
+  item: '<tr><td class="title"></td><td class="authors"></td><td class="shelf"></td></tr>'
 };
 
-var values = [
-  {
-    name: 'Jonny Strömberg',
-    born: 1986
-  },
-  {
-    name: 'Jonas Arnklint',
-    born: 1985
-  },
-  {
-    name: 'Martina Elm',
-    born: 1986
-  }
-];
+var bookList = new List('books', options, books);
 
-var bookList = new List('books', options, values);
-
-bookList.add({
-  name: 'Gustaf Lindqvist',
-  born: 1983
-});
+/*bookList.add({
+  title: 'Gustaf Lindqvist',
+  author: 1983
+}); */
