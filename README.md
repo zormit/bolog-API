@@ -4,6 +4,9 @@
 
 This is a book catalog written in Flask. It's only an API + backend.
 
+## Contributing
+
+Currently the API is not used in any way. The data that is currently published on http://zormit.github.io/bolog-API/ on a prototype-basis via the `gh-pages` branch.
 
 ## development
 
